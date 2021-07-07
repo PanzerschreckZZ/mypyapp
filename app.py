@@ -17,6 +17,7 @@ db = MongoEngine()
 db.init_app(app)
 
 #test
+1 2 3 4 
 
 class User(db.Document):
     firstname = db.StringField()
