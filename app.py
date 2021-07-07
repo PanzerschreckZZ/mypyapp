@@ -16,8 +16,9 @@ app.config['MONGODB_SETTINGS'] = {
 db = MongoEngine()
 db.init_app(app)
 
-#test
-1 2 3 4 
+# test
+# 1 2 3 4
+
 
 class User(db.Document):
     firstname = db.StringField()
@@ -86,7 +87,7 @@ def register():
             print(x.firstname)
         return render_template("register.html", form=form, users=users)
 
-        
+
 # Register Page End
 
 # @app.route("/layout") # => http://127.0.0.1:5000/layout
