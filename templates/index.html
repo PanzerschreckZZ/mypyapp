@@ -1,0 +1,31 @@
+{% extends "layout.html" %} 
+
+
+{% block title %}
+Index
+{% endblock title %}
+
+{% block body %}
+<h2>Index içerik</h2>
+
+<p>Arka taraftan gelen sayı değeri: <strong>{{number}}</strong></p>
+<p>Arka taraftan gelen isim: <strong>{{isim}}</strong></p>
+
+{% if number == 11 %}
+<p>Sayı 11...</p>
+{% else %}
+<p>Sayı 11 değil...</p>
+{% endif %}
+
+
+<ul class="list-group">
+
+{% for sayi in sayilar %}
+    <li class="list-group-item">Sayı: {{sayi}}</li>
+{% endfor %}
+
+</ul>
+
+
+{% endblock body %}
+
