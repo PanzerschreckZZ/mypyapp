@@ -16,6 +16,7 @@ app.config['MONGODB_SETTINGS'] = {
 db = MongoEngine()
 db.init_app(app)
 
+#test
 
 class User(db.Document):
     firstname = db.StringField()
